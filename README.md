@@ -36,7 +36,7 @@ Frps onkey-install-shell Changelog<br>Frp版本更新说明
  * ## [v0.27.0 [2019/04/25]](#v0.27.0[2019/04/25])
     * ### New
      > Proxy Protocol support plugin unix_domain_socket.
-       frps support custom 404 page.
+      frps support custom 404 page.
 * ## [v0.26.0 [2019/04/10]](#v0.26.0[2019/04/10])
     * ### New
      > Support Proxy Protocol.  
