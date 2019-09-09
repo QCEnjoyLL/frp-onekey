@@ -1,18 +1,25 @@
 
-Frps服务端一键配置脚本，最新版本：0.27.1
+Frps服务端一键配置脚本，最新版本：0.29.0
 ===========
 
 *Frp 是一个高性能的反向代理应用，可以帮助您轻松地进行内网穿透，对外网提供服务，支持 tcp, http, https 等协议类型，并且 web 服务支持根据域名进行路由转发。*
 
-* 详情：fatedier ( https://github.com/fatedier/frp ）
-* 此脚本原作者：clangcn （ https://github.com/clangcn/onekey-install-shell ）
+* 详情：fatedier (https://github.com/fatedier/frp)
+* 此脚本原作者：clangcn (https://github.com/clangcn/onekey-install-shell)
 
 ## Frps-Onekey-Install-Shell  
 
 ### Install（安装）
 
+#### Github
 ```Bash
 wget https://raw.githubusercontent.com/QCEnjoyLL/frp-onekey/master/install-frps.sh -O ./install-frps.sh
+chmod 700 ./install-frps.sh
+./install-frps.sh install
+```
+#### Aliyun
+```Bash
+wget https://code.aliyun.com/Nerocats/frps-onekey/raw/master/install-frps.sh -O ./install-frps.sh
 chmod 700 ./install-frps.sh
 ./install-frps.sh install
 ```
@@ -33,10 +40,42 @@ Frps onkey-install-shell Changelog<br>Frp版本更新说明
 ---------------------------------------
 
  <!-- vim-markdown-toc GFM -->
- * ## [v0.27.0 [2019/04/25]](#v0.27.0[2019/04/25])
+
+
+* ## [v0.29.0 [2019/08/30]](#v0.29.0[2019/08/30])
     * ### New
-    > Proxy Protocol support plugin unix_domain_socket.  
-       frps support custom 404 page.
+     > New disable_log_color configure to disable console log color.
+     > Plugin https2http support attatch headers by plugin_header_ prefix.
+    * ### Change
+     > Provide a high-level Go API.
+    * ### Fix
+     > max_pool_count is invalid.
+     > Judge error between IPv4 and IPv6 in proxy protocol
+
+* ## [v0.28.2 [2019/08/10]](#v0.28.2[2019/08/10])
+    * ### Fix
+     > Fix a bug that health check worker may stop unexpected.
+
+* ## [v0.28.1 [2019/08/08]](#v0.28.1[2019/08/08])
+    * ### New
+     > Update standard http ReverseProxy to handle more upgrade protocol
+     > Update some vendor packages.
+
+* ## [v0.28.0 [2019/08/03]](#v0.28.0[2019/08/03])
+    * ### New
+     > type http support load balancing.
+    * ### Fix
+     > Fix a connection leak problem when login_fail_exit is false.
+
+* ## [v0.27.1 [2019/07/15]](#v0.27.1[2019/07/15])
+    * ### Fix
+     > Add read timeout for TLS connection check.
+
+* ## [v0.27.0 [2019/04/25]](#v0.27.0[2019/04/25])
+    * ### New
+     > Proxy Protocol support plugin unix_domain_socket.  
+     > frps support custom 404 page.
+
 * ## [v0.26.0 [2019/04/10]](#v0.26.0[2019/04/10])
     * ### New
      > Support Proxy Protocol.  
