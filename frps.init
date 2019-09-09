@@ -6,7 +6,7 @@
 #=========================================================
 #   System Required:  CentOS/Debian/Ubuntu (32bit/64bit)
 #   Description:  Manager for frps, Written by Clang
-#   Mender：MvsCode
+#   Mender：QCEnjoyLL
 #=========================================================
 ### BEGIN INIT INFO
 # Provides:          frps
@@ -35,7 +35,7 @@ fun_clangcn()
 {
     echo ""
     echo "+---------------------------------------------------------+"
-    echo "|     Manager for ${ProgramName}, Author Clang, Mender MvsCode      |"
+    echo "|     Manager for ${ProgramName}, Author Clang, Mender QCEnjoyLL      |"
     echo "+---------------------------------------------------------+"
     echo ""
 }
